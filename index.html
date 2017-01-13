@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+	<meta charset="UTF-8">
+	
+<head>
+	<title>mortgage calculator Tami</title>
+
+
+	<link rel="stylesheet" href="styles.css">
+</head>
+
+<!-- This div allows me to put everything in it in a container
+and style all of the contents together -->
+
+<div class="container"
+
+
+<body>
+<h1> Mortgage Calculator </h1>
+
+<!-- These inputs and buttons were from bootstrap -->
+
+<div class="input-group">
+ 
+  <input type="text" maxlength="15" id="basic-addon1" class="form-control" placeholder="enter number" aria-describedby="basic-addon1">
+   <span class="input-group-addon">Loan Balance $</span>
+</div>
+
+
+<div class="input-group">
+  <input type="number" id="basic-addon2" maxlength="4" class="form-control" aria-describedby="basic-addon2">
+  <span class="input-group-addon">Interest Rate</span>
+</div>
+
+
+<div class="input-group">
+  <span class="input-group-addon"></span>
+  <input type="text" id="basic-addon3" maxlength="4" class="form-control" aria-label="Amount (to the nearest dollar)">
+  <span class="input-group-addon">Loan Term (years)</span>
+</div>
+
+
+<select id="monthSelect">
+<option value="1" >12</option> 
+<option value="2" >6</option> 
+</select>
+
+<!-- button to calculate mortgage -->
+<div class="btn-group">
+  <button class="btn" onclick="buttonFinal()" type="button" aria-haspopup="true" aria-expanded="false">
+    Calculate Mortgage <span class="caret"></span>
+  </button>
+
+</div>
+
+<!-- <button id="calc" onclick="buttonFinal()" type="button">Calculate</button> -->
+
+<p class="calc" id="resultMath"></p>
+
+</div>
+
+<script src="index.js"></script>
+</body>
+</html>
