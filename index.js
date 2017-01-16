@@ -15,7 +15,7 @@ console.log(typeof balanceLoan)
 
 //this is an alert that fires if the user enters something other than a number
 if (isNaN(balanceLoan)) {
-	alert("not a number");
+	alert("Your loan balance is not a number.");
 }
 
 
@@ -68,4 +68,4 @@ console.log(monthlyPayment)
 
 
 }
-
+// Code Reviewed by AP and SS.
